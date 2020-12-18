@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  color: $basic-dark;
+  font-family: $montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+}
+
+.visually-hidden {
+  display: none;
+}
