@@ -1,0 +1,29 @@
+.promo {
+  position: relative;
+  height: 100%;
+}
+
+.promo__wrapper {
+  position: absolute;
+  top: 185px;
+  right: 375px;
+  padding-right: 43px;
+  display: flex;
+  flex-direction: column;
+  width: 412px;
+}
+
+.promo__title {
+  @include main-title;
+
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  color: $white;
+}
+
+.promo__text {
+  margin: 0;
+  margin-right: 20px;
+  line-height: 27px;
+  color: $white;
+}

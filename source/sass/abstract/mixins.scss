@@ -1,0 +1,33 @@
+@mixin phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin wrapper {
+  position: relative;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin main-title {
+  color: $basic-black;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  margin: 0;
+  padding: 0;
+}

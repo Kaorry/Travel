@@ -1,0 +1,9 @@
+.page-header {
+  @include wrapper;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 99px;
+}

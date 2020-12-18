@@ -5,30 +5,41 @@
     <title>Путешествие по Европе</title>
     <meta name="description" content="Путешествие по Европе: главная страница">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat-medium.woff" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat-regular.woff" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat-semibold.woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/montserrat-semibold.woff" as="font" crossorigin>
+    <link rel="preload" href="./css/styles.min.css" as="style">
+
     <link rel="stylesheet" href="./css/styles.min.css">
   </head>
 
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <a class="page-header__logo">
-          <img class="page-header__logo" src="./img/logo-mobile.svg" width="57" height="22" alt="Логотип Way">
+        <a class="main-nav__logo">
+          <img class="main-nav__logo" src="./img/logo-desktop.png" width="57" height="22" alt="Логотип Way">
         </a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">О путешествии</li>
-          <li class="main-nav__item">Цены </li>
-        </ul>
-        <a href="tel: +749978468446">+7 (499) -784-684-46</a>
-      </nav>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">О путешествии</li>
+            <li class="main-nav__item">Цены </li>
+          </ul>
+          <a class="main-nav__phone" href="tel: +749978468446">+7 (499) -784-684-46</a>
+        </nav>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Путешествие по Европе</h1>
 
       <section class="promo">
-        <h2 class="promo__title">Путешествие по Европе</h2>
-        <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-        <a class="promo__button" href="">смотреть тур</a>
+        <img class="promo__image" src="./img/travel.png" width="1920" height="860" alt="Путешествие по Европе">
+        <div class="promo__wrapper">
+          <h2 class="promo__title">Путешествие по Европе</h2>
+          <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+          <a class="promo__button" href="">смотреть тур</a>
+        </div>
       </section>
 
       <section class="places">
