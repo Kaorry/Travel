@@ -19,6 +19,7 @@
 @mixin wrapper {
   position: relative;
   max-width: 1170px;
+  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,4 +31,30 @@
   line-height: 80px;
   margin: 0;
   padding: 0;
+}
+
+@mixin button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $white;
+  background-color:$basic-accent;
+  font-size: 12px;
+  line-height: 15px;
+  width: 340px;
+  height: 75px;
+}
+
+@mixin orange-line {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 228px;
+  top: 0;
+  left: 0;
+  background-color: $basic-accent;
 }
