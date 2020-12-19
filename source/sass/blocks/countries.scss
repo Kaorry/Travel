@@ -1,0 +1,11 @@
+.countries {
+  @include wrapper;
+}
+
+.countries__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 900px;
+}

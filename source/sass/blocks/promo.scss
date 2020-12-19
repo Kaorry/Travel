@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+.promo__image {
+  margin-bottom: 192px;
+}
+
 .promo__wrapper {
   position: absolute;
   top: 185px;
@@ -24,6 +28,15 @@
 .promo__text {
   margin: 0;
   margin-right: 20px;
+  margin-bottom: 33px;
   line-height: 27px;
   color: $white;
+}
+
+.promo__button {
+  @include button;
+
+  justify-content: left;
+  padding-left: 40px;
+  width: 300px;
 }
