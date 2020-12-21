@@ -1,11 +1,140 @@
 .countries {
   @include wrapper;
+
+  margin-bottom: 240px;
 }
 
 .countries__list {
   list-style: none;
+
   display: flex;
   justify-content: space-between;
   padding: 0;
+  padding-bottom: 14px;
   width: 900px;
+  font-size: 20px;
+  line-height: 24px;
+
+  border-bottom: 1px solid $grey-border;
+}
+
+.countries__tab {
+  text-decoration: none;
+  color: $basic-dark;
+  font-weight: 500;
+
+  &--current {
+    color: $basic-accent;
+  }
+}
+
+.countries__block {
+  display: none;
+  position: relative;
+  margin-top: 80px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/map-background.png");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 1443px;
+    height: 1088px;
+    z-index: -10;
+  }
+
+  &--current {
+    display: flex;
+  }
+}
+
+.countries__description {
+  width: 425px;
+  margin-right: 45px;
+}
+
+.countries__title {
+  @include main-title;
+
+  position: relative;
+  letter-spacing: -1.25px;
+  width: 425px;
+  margin-bottom: 53px;
+  padding-top: 15px;
+
+  &::after {
+    @include orange-line;
+
+    top: 114px;
+    width: 175px;
+    height: 3px;
+  }
+}
+
+.countries__text {
+  width: 370px;
+}
+
+.countries__button {
+  @include button;
+
+  margin-top: 49px;
+  width: 250px;
+}
+
+.countries__image {
+  position: relative;
+}
+
+.countries__reviews {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -34%);
+  right: 0;
+  width: 322px;
+  background-color: $white;
+  padding: 30px;
+}
+
+.countries__reviews-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 33px;
+
+  &::after {
+    @include orange-line;
+
+    top: 78px;
+    left: 30px;
+    width: 68px;
+    height: 1px;
+  }
+}
+
+.countries__reviews-text {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.countries__reviews-user {
+  display: flex;
+  line-height: 38px;
+  margin-top: 26px;
+}
+
+.countries__reviews-avatar {
+  border-radius: 50%;
+}
+
+.countries__reviews-name {
+  margin: 0;
+  margin-left: 15px;
 }
