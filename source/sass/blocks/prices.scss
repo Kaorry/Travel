@@ -1,0 +1,24 @@
+.prices {
+  @include wrapper;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.prices__block {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 299px;
+}
+
+.prices__rates {
+  position: relative;
+  padding: 30px;
+  margin-right: 30px;
+  width: 310px;
+  border: 1px solid $grey-border;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
