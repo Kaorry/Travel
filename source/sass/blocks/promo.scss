@@ -5,6 +5,12 @@
 
 .promo__image {
   margin-bottom: 192px;
+
+  @include tablet {
+    height: 344px;
+    width: 100%;
+    margin-bottom: 71px;
+  }
 }
 
 .promo__wrapper {
@@ -15,6 +21,14 @@
   display: flex;
   flex-direction: column;
   width: 412px;
+
+  @include tablet {
+    align-items: center;
+    right: 50%;
+    transform: translateX(50%);
+    padding-right: 0;
+    top: 60px;
+  }
 }
 
 .promo__title {
@@ -23,6 +37,11 @@
   letter-spacing: -1px;
   margin-bottom: 30px;
   color: $white;
+
+  @include tablet {
+    letter-spacing: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .promo__text {
@@ -31,6 +50,12 @@
   margin-bottom: 33px;
   line-height: 27px;
   color: $white;
+
+  @include tablet {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .promo__button {
