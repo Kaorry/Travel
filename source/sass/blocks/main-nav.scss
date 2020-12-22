@@ -6,6 +6,11 @@
 
 .main-nav__logo {
   padding-left: 3px;
+
+  @include tablet {
+    width: 44px;
+    height: 17px;
+  }
 }
 
 .main-nav__list {
@@ -24,9 +29,9 @@
 }
 
 .main-nav__phone {
-  font-size: 18px;
-  color: $basic-black;
-  font-weight: 400;
-  margin-left: 35px;
-  margin-right: 7px;
+  @include phone;
+
+  @include tablet {
+    display: none;
+  }
 }

@@ -22,6 +22,10 @@
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @include tablet {
+    max-width: 726px;
+  }
 }
 
 @mixin main-title {
@@ -31,6 +35,11 @@
   line-height: 80px;
   margin: 0;
   padding: 0;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 45px;
+  }
 }
 
 @mixin button {
@@ -47,6 +56,13 @@
   line-height: 15px;
   width: 340px;
   height: 75px;
+
+  @include tablet {
+    width: 210px;
+    height: 50px;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 @mixin orange-line {
@@ -57,4 +73,13 @@
   top: 0;
   left: 0;
   background-color: $basic-accent;
+}
+
+@mixin phone {
+  text-decoration: none;
+  font-size: 18px;
+  color: $basic-black;
+  font-weight: 400;
+  margin-left: 35px;
+  margin-right: 7px;
 }
