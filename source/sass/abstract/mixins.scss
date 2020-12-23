@@ -25,11 +25,12 @@
 
   @include tablet {
     max-width: 726px;
+    padding-left: 0;
   }
 }
 
 @mixin main-title {
-  color: $basic-black;
+  color: $basic-dark;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
@@ -56,6 +57,11 @@
   line-height: 15px;
   width: 340px;
   height: 75px;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-active;
+  }
 
   @include tablet {
     width: 210px;

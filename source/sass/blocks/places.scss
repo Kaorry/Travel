@@ -2,6 +2,10 @@
   @include wrapper;
 
   margin-bottom: 34px;
+
+  @include tablet {
+    margin-bottom: 98px;
+  }
 }
 
 .places__title {
@@ -80,8 +84,13 @@
     margin-bottom: 0;
     margin-right: 29px;
 
-    &:nth-child(even) {
+    &:nth-child(even),
+    &:last-child  {
       margin-right: 0;
+    }
+
+    &:last-child {
+      margin-top: 29px;
     }
 
     & img {
