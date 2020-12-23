@@ -2,6 +2,10 @@
   @include wrapper;
 
   margin-bottom: 240px;
+
+  @include tablet {
+    margin-bottom: 112px;
+  }
 }
 
 .countries__list {
@@ -16,15 +20,21 @@
   line-height: 24px;
 
   border-bottom: 1px solid $grey-border;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .countries__tab {
   text-decoration: none;
   color: $basic-dark;
+  opacity: 30%;
   font-weight: 500;
 
   &--current {
     color: $basic-accent;
+    opacity: 100%;
   }
 }
 
@@ -46,16 +56,34 @@
     width: 1443px;
     height: 1088px;
     z-index: -10;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &--current {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  @include tablet {
+    margin-top: 33px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
 .countries__description {
   width: 425px;
   margin-right: 45px;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .countries__title {
@@ -67,17 +95,30 @@
   margin-bottom: 53px;
   padding-top: 15px;
 
-  &::after {
-    @include orange-line;
+  @include desktop {
+    &::after {
+      @include orange-line;
 
-    top: 114px;
-    width: 175px;
-    height: 3px;
+      top: 114px;
+      width: 175px;
+      height: 3px;
+    }
+  }
+
+  @include tablet {
+    width: 100%;
+    padding-top: 0;
+    letter-spacing: 0;
+    margin-bottom: 21px;
   }
 }
 
 .countries__text {
   width: 370px;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .countries__button {
@@ -85,20 +126,42 @@
 
   margin-top: 49px;
   width: 250px;
+
+  @include tablet {
+    width: 250px;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
 }
 
 .countries__image {
   position: relative;
+
+  @include tablet {
+    height: 415px;
+    width: 768px;
+    margin: 0;
+  }
 }
 
 .countries__reviews {
   position: absolute;
+  text-align: left;
   top: 50%;
   transform: translate(0, -34%);
   right: 0;
   width: 322px;
   background-color: $white;
   padding: 30px;
+
+  @include tablet {
+    bottom: -32px;
+    right: 50%;
+    top: auto;
+    transform: translateX(50%);
+  }
 }
 
 .countries__reviews-title {
